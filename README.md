@@ -1,4 +1,4 @@
 BPValidator
 ===========
 
-API Para validação dos dados de um formulário
+Plugin para validação dos dados de um formulário
