@@ -3,9 +3,9 @@
  * @param Element form
  */
 var BPValidator = function(form) {
-    this.inputs                  = form.querySelectorAll(".required");
+    this.inputs                  = form.querySelectorAll(".bp-required");
     this.form                    = form;
-    this.invalidElementClassName = "invalid-element";
+    this.invalidElementClassName = "bp-invalid-element";
     this.invalidElements         = Array();
     this.addEvents();
 }
@@ -35,7 +35,7 @@ BPValidator.prototype.addEvents = function() {
  * @return Boolean
  */
 BPValidator.prototype.isValid = function(element) {
-    if (element.classList.contains("required")) {
+    if (element.classList.contains("bp-required")) {
         if (element.value.length === 0) {
             return false;
         }
