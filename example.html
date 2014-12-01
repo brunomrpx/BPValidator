@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Formulário</title>
+        <meta charset="utf-8">
+        <link href="css/BPValidator.css" rel="stylesheet">
+    </head>
+    <body>
+        <form action="" method="post" id="form">
+            <fieldset>
+                <legend>
+                    <h1>FORMULÁRIO</h1>
+                </legend>
+                    <div>
+                        <label>Nome: </label>
+                        <input name="name" type="text" class="bp-required">
+                    </div>
+                    <div>
+                        <label>Email: </label>
+                        <input name="email" type="text">
+                    </div>
+                    <div>
+                        <label>Assunto: </label>
+                        <input name="subject" type="text" class="bp-required">
+                    </div>
+                    <div>
+                        <label>Mensagem: </label>
+                        <textarea name="message" class="bp-required"></textarea>
+                    </div>
+                    <div>
+                        <label></label>
+                        <input type="submit" value="Enviar">
+                    </div>
+            </fieldset>
+        </form>
+    </body>
+    <script src="js/BPValidator.js"></script>
+    <script>
+    var form = document.querySelector("#form");
+    var validate = new BPValidator(form);
+    </script>
+</html>
