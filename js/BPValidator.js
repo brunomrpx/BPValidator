@@ -62,13 +62,18 @@ BPValidator.prototype.validateElement = function(element) {
         this.invalid(element);
     }
 }
+/**
+ * Verifica se o elemento está na lista de elementos inválidos
+ * @param Element element
+ * @return Boolean
+ */
 BPValidator.prototype.inInvalidElements = function(element) {
     return this.invalidElements.indexOf(element) !== -1;
 }
 /**
  * Verifica se o elemento possui formatação inválida
  * @param  Element  element
- * @return Boolean]
+ * @return Boolean
  */
 BPValidator.prototype.hasInvalidFormat = function(element) {
     return element.classList.contains(this.invalidElementClassName);
