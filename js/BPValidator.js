@@ -5,7 +5,7 @@
 var BPValidator = function(form) {
     this.inputs                  = form.querySelectorAll(".required");
     this.form                    = form;
-    this.invalidElementClassName = "error-message";
+    this.invalidElementClassName = "invalid-element";
     this.invalidElements         = Array();
     this.addEvents();
 }
